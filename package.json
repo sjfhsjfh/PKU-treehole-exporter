@@ -1,0 +1,25 @@
+{
+  "name": "treehole-exporter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "lint:format": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "check": "pnpm lint:format && pnpm typecheck"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-monkey": "^7.1.8"
+  },
+  "dependencies": {
+    "@myriaddreamin/typst-ts-web-compiler": "0.7.0-rc2",
+    "@myriaddreamin/typst.ts": "0.7.0-rc2"
+  }
+}
